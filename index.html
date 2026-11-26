@@ -1,1127 +1,579 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shubham Pal - Data Analyst Portfolio">
+<meta name="theme-color" content="#081225">
 
-    <meta charset="UTF-8">
+<title>Shubham Pal | Data Analyst Portfolio</title>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <meta name="description"
-          content="Shubham Pal - MCA AI & Data Science student and aspiring Data Analyst portfolio.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Shubham Pal | Data Analyst Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+<div class="progress" id="progress"></div>
 
-    <!-- =========================================
-         NAVBAR
-    ========================================== -->
+<header class="header">
+<nav class="nav container">
 
-    <header class="navbar-wrapper">
+<a class="logo" href="#home">Shubham<span>.</span></a>
 
-        <nav class="navbar">
+<button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
 
-            <a href="#home" class="logo">
-                Shubham<span>.</span>
-            </a>
+<ul id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#journey">Education</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
+</nav>
+</header>
 
-            <ul class="nav-links">
+<main>
 
-                <li>
-                    <a href="#home">Home</a>
-                </li>
+<!-- HOME SECTION -->
+<section class="hero" id="home">
 
-                <li>
-                    <a href="#about">About</a>
-                </li>
+<div class="container hero-grid">
 
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
+<div class="reveal">
 
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
+<div class="pill">
+<i></i> MCA · AI &amp; Data Science
+</div>
 
-                <li>
-                    <a href="#education">Education</a>
-                </li>
+<p class="kicker">HELLO, I'M</p>
 
-                <li>
-                    <a href="#research">Research</a>
-                </li>
+<h1>Shubham <em>Pal</em></h1>
 
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+<h2>Data Analyst <span>|</span>
+<b id="role">Power BI Developer</b>
+</h2>
 
-            </ul>
+<p class="intro">
+I turn raw data into meaningful insights through data analysis,
+visualization and practical machine learning projects.
+I enjoy exploring datasets, finding patterns and communicating
+results that support better decisions.
+</p>
 
-        </nav>
+<div class="actions">
+<a class="btn primary" href="#projects">Explore Projects ↗</a>
+<a class="btn secondary" href="Shubham_Pal_Resume.pdf" target="_blank">View Resume ↓</a>
+</div>
 
-    </header>
+<div class="social">
+<a href="https://github.com/Shubham05-tech" target="_blank">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/shubham-pal-178138395" target="_blank">LinkedIn ↗</a>
+<a href="mailto:pal8887555053@gmail.com">Email ↗</a>
+</div>
 
+</div>
 
+<div class="visual reveal">
 
-    <!-- =========================================
-         HOME
-    ========================================== -->
+<div class="orbit"></div>
 
-    <main>
+<div class="portrait">
 
-        <section id="home" class="hero">
+<div class="initials">
+SP
+<small>DATA ANALYST</small>
+</div>
 
-            <div class="hero-content">
+<img src="assets/profile.jpg" alt="Shubham Pal"
+onerror="this.style.display='none'">
 
+<p>● Curious about data. Focused on insights.</p>
 
-                <!-- Profile Photo -->
+</div>
 
-                <div class="hero-photo">
+<span class="float f1">Py&nbsp; Python</span>
+<span class="float f2">▥&nbsp; Power BI</span>
+<span class="float f3">SQL&nbsp; Analytics</span>
 
-                    <img
-                        src="assets/profile.jpg"
-                        alt="Shubham Pal">
+</div>
+</div>
 
-                </div>
+<a class="scroll" href="#about">SCROLL TO EXPLORE ↓</a>
 
+</section>
 
-                <!-- Badge -->
 
-                <div class="hero-badge">
-                    MCA (AI & Data Science) Student
-                </div>
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
 
+<div class="container">
 
-                <!-- Small Heading -->
-
-                <p class="hero-small-text">
-                    Hello, I'm
-                </p>
-
-
-                <!-- Main Name -->
-
-                <h1>
-                    Shubham Pal
-                </h1>
-
-
-                <!-- Role -->
-
-                <h2>
-                    Aspiring Data Analyst
-                </h2>
-
-
-                <!-- Description -->
-
-                <p class="hero-description">
-
-                    I am interested in Data Analytics, Python, SQL,
-                    Excel, Power BI and Machine Learning. I enjoy
-                    analyzing data, creating visualizations and
-                    developing practical projects.
-
-                </p>
-
-
-                <!-- Buttons -->
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="#projects"
-                        class="btn btn-primary">
-
-                        View Projects
-
-                    </a>
-
-
-                    <a
-                        href="Shubham_Pal_Resume.pdf"
-                        download
-                        class="btn btn-secondary">
-
-                        Download Resume
-
-                    </a>
-
-                </div>
-
-
-                <!-- Social Links -->
-
-                <div class="hero-socials">
-
-                    <a
-                        href="https://github.com/Shubham05-tech"
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        GitHub
-
-                    </a>
-
-
-                    <span>|</span>
-
-
-                    <a
-                        href="https://www.linkedin.com/in/shubham-pal-178138395"
-                        target="_blank"
-                        rel="noopener noreferrer">
-
-                        LinkedIn
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             ABOUT
-        ========================================== -->
-
-        <section id="about" class="section">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    ABOUT ME
-                </p>
-
-                <h2>
-                    Turning Data Into Insights
-                </h2>
-
-            </div>
-
-
-            <div class="about-content">
-
-                <p>
-
-                    I am an MCA (AI & Data Science) student with
-                    knowledge of Python, SQL, Excel, Power BI,
-                    Pandas, NumPy, data visualization and basic
-                    Machine Learning.
-
-                </p>
-
-
-                <p>
-
-                    I have developed academic projects involving
-                    data analysis, machine learning and
-                    visualization. I have also completed a
-                    45-day technical training program and
-                    participated in research paper presentations.
-
-                </p>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             SKILLS
-        ========================================== -->
-
-        <section id="skills"
-                 class="section section-light">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    TECHNICAL SKILLS
-                </p>
-
-                <h2>
-                    My Skills
-                </h2>
-
-            </div>
-
-
-            <div class="skills-grid">
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        PY
-                    </div>
-
-                    <h3>
-                        Programming
-                    </h3>
-
-                    <p>
-                        Python
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        SQL
-                    </div>
-
-                    <h3>
-                        Database
-                    </h3>
-
-                    <p>
-                        SQL • MySQL
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        DA
-                    </div>
-
-                    <h3>
-                        Data & Analytics
-                    </h3>
-
-                    <p>
-                        Pandas • NumPy • Excel
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        BI
-                    </div>
-
-                    <h3>
-                        Visualization
-                    </h3>
-
-                    <p>
-                        Power BI • Matplotlib
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        ML
-                    </div>
-
-                    <h3>
-                        Machine Learning
-                    </h3>
-
-                    <p>
-                        Scikit-learn • NLP
-                    </p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        DEV
-                    </div>
-
-                    <h3>
-                        Tools
-                    </h3>
-
-                    <p>
-                        Jupyter • VS Code • Git • GitHub
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             PROJECTS
-        ========================================== -->
-
-        <section id="projects" class="section">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    MY WORK
-                </p>
-
-                <h2>
-                    Featured Projects
-                </h2>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <!-- PROJECT 1 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            01
-                        </span>
-
-                        <span class="project-type">
-                            Machine Learning
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Spam Message Detection System
-                    </h3>
-
-
-                    <p>
-
-                        Classified 5,169 messages as Spam or Ham
-                        using text preprocessing, TF-IDF and
-                        machine learning. Evaluated using
-                        accuracy, precision and confusion matrix.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>Python</span>
-                        <span>NLP</span>
-                        <span>ML</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://github.com/Shubham05-tech/spam-detection-ml"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View on GitHub →
-
-                    </a>
-
-                </article>
-
-
-
-                <!-- PROJECT 2 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            02
-                        </span>
-
-                        <span class="project-type">
-                            Data Analysis
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Flipkart E-Commerce Data Analysis
-                    </h3>
-
-
-                    <p>
-
-                        Analyzed 20,002 product records using
-                        data cleaning and exploratory data analysis.
-                        Studied prices, discounts, ratings,
-                        brands and categories.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>NumPy</span>
-                        <span>Matplotlib</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://github.com/Shubham05-tech/company-sales-analysis"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View on GitHub →
-
-                    </a>
-
-                </article>
-
-
-
-                <!-- PROJECT 3 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            03
-                        </span>
-
-                        <span class="project-type">
-                            Power BI
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Smoking Health Risk Analysis
-                    </h3>
-
-
-                    <p>
-
-                        Healthcare-focused Power BI project
-                        for analyzing smoking-related health
-                        data and presenting insights through
-                        visualization.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>Power BI</span>
-                        <span>Healthcare</span>
-                        <span>Visualization</span>
-
-                    </div>
-
-
-                    <a
-    href="https://github.com/Shubham05-tech/Smoking-Health-Risk-Analysis"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="project-link">
-    View on GitHub →
+<div class="heading reveal">
+<label>01 / ABOUT ME</label>
+<h2>Turning data into <em>meaningful insights.</em></h2>
+</div>
+
+<div class="about-grid">
+
+<div class="copy reveal">
+
+<p class="lead">
+I am an MCA student specializing in Artificial Intelligence
+&amp; Data Science, building practical skills in data analytics
+and machine learning.
+</p>
+
+<p>
+My work includes cleaning and exploring datasets,
+building analytical solutions, developing Power BI dashboards
+and experimenting with predictive models.
+I continuously improve my technical and problem-solving skills
+through hands-on projects.
+</p>
+
+<p>
+I have completed a 45-day Data Analytics summer training program
+at Techpile Technology Pvt. Ltd., Lucknow.
+</p>
+
+<a class="link" href="#contact">Let's connect ↗</a>
+
+</div>
+
+<div class="highlights reveal">
+
+<article>
+<b>⌘</b>
+<div>
+<h3>Analytical mindset</h3>
+<p>Exploring data to identify patterns and useful findings.</p>
+</div>
+</article>
+
+<article>
+<b>▤</b>
+<div>
+<h3>Visual storytelling</h3>
+<p>Presenting insights through clear charts and dashboards.</p>
+</div>
+</article>
+
+<article>
+<b>◈</b>
+<div>
+<h3>Continuous learning</h3>
+<p>Building projects and strengthening technical knowledge.</p>
+</div>
+</article>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- SKILLS SECTION -->
+<section class="section alt" id="skills">
+
+<div class="container">
+
+<div class="heading reveal">
+<label>02 / TOOLKIT</label>
+<h2>Skills &amp; <em>technologies.</em></h2>
+<p>Tools I use to explore, analyze and present data.</p>
+</div>
+
+<div class="skills">
+
+<article class="skill reveal">
+<b>Py</b>
+<h3>Programming</h3>
+<p>Python</p>
+</article>
+
+<article class="skill reveal">
+<b>SQL</b>
+<h3>Database</h3>
+<p>SQL · MySQL</p>
+</article>
+
+<article class="skill reveal">
+<b>▦</b>
+<h3>Data Analysis</h3>
+<p>Pandas · NumPy · Excel</p>
+</article>
+
+<article class="skill reveal">
+<b>▥</b>
+<h3>Visualization</h3>
+<p>Power BI · Matplotlib · Seaborn</p>
+</article>
+
+<article class="skill reveal">
+<b>ML</b>
+<h3>Machine Learning</h3>
+<p>Scikit-learn · NLP</p>
+</article>
+
+<article class="skill reveal">
+<b>⌘</b>
+<h3>Tools</h3>
+<p>Jupyter · VS Code · Git · GitHub</p>
+</article>
+
+</div>
+</div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section class="section" id="projects">
+
+<div class="container">
+
+<div class="heading reveal">
+<label>03 / SELECTED WORK</label>
+<h2>Projects that show <em>how I think.</em></h2>
+<p>Explore my analytics, visualization and machine learning work.</p>
+</div>
+
+<div class="filters reveal">
+<button class="active" data-filter="all">All projects</button>
+<button data-filter="powerbi">Power BI</button>
+<button data-filter="python">Python / ML</button>
+<button data-filter="analysis">Data analysis</button>
+</div>
+
+<div class="projects">
+
+<article class="project reveal" data-cat="powerbi analysis">
+
+<div class="art retail">
+<span>FEATURED · RETAIL ANALYTICS</span>
+<div class="mock">
+<div></div><div></div><div></div>
+<section></section>
+</div>
+</div>
+
+<div class="project-body">
+<small>01 / FEATURED PROJECT</small>
+<h3>RetailPulse – Sales Forecasting</h3>
+<p>
+Retail analytics workflow covering data preparation, EDA,
+RFM analysis, K-Means customer segmentation, revenue
+forecasting and Power BI dashboards.
+</p>
+<div class="tags">
+<i>Python</i><i>Power BI</i><i>K-Means</i><i>Forecasting</i>
+</div>
+<a href="https://github.com/Shubham05-tech/RetailPulse-Sales-Forecasting" target="_blank">Explore repository ↗</a>
+</div>
+
+</article>
+
+
+<article class="project reveal" data-cat="python powerbi">
+
+<div class="art churn">
+<span>CUSTOMER INTELLIGENCE</span>
+<div class="donut">CHURN<br>ANALYSIS</div>
+</div>
+
+<div class="project-body">
+<small>02 / MACHINE LEARNING</small>
+<h3>Telecom Customer Churn Prediction</h3>
+<p>Customer churn analysis and prediction using Python,
+machine learning and Power BI.</p>
+<div class="tags">
+<i>Python</i><i>ML</i><i>Power BI</i>
+</div>
+<a href="https://github.com/Shubham05-tech/Telecom-Customer-Churn-Prediction" target="_blank">Explore repository ↗</a>
+</div>
+
+</article>
+
+
+<article class="project reveal" data-cat="powerbi analysis">
+
+<div class="art cricket">
+<span>SPORTS ANALYTICS</span>
+<strong>MS DHONI</strong>
+<p>CRICKET ANALYTICS</p>
+</div>
+
+<div class="project-body">
+<small>03 / POWER BI</small>
+<h3>MS Dhoni Cricket Analytics</h3>
+<p>Cricket data analytics project focused on exploring
+performance statistics and communicating insights visually.</p>
+<div class="tags">
+<i>Power BI</i><i>Visualization</i>
+</div>
+<a href="https://github.com/Shubham05-tech/MS-Dhoni-Cricket-Analytics" target="_blank">Explore repository ↗</a>
+</div>
+
+</article>
+
+
+<article class="project reveal" data-cat="analysis python">
+
+<div class="art logistics">
+<span>OPERATIONS ANALYTICS</span>
+<div class="route">● ━━━━━ ● ━━━━━ ●</div>
+</div>
+
+<div class="project-body">
+<small>04 / DATA ANALYSIS</small>
+<h3>Logistics Data Analysis</h3>
+<p>Exploratory analysis of logistics data to inspect patterns,
+prepare data and derive operational insights.</p>
+<div class="tags">
+<i>Python</i><i>Pandas</i><i>EDA</i>
+</div>
+<a href="https://github.com/Shubham05-tech/Logistics-Data-Analysis" target="_blank">Explore repository ↗</a>
+</div>
+
+</article>
+
+
+<article class="project reveal" data-cat="python">
+
+<div class="art spam">
+<span>NATURAL LANGUAGE PROCESSING</span>
+<strong>SPAM / HAM</strong>
+</div>
+
+<div class="project-body">
+<small>05 / MACHINE LEARNING</small>
+<h3>Spam Message Detection</h3>
+<p>Text classification using preprocessing, TF-IDF and
+machine learning to classify messages as spam or ham.</p>
+<div class="tags">
+<i>Python</i><i>NLP</i><i>TF-IDF</i>
+</div>
+<a href="https://github.com/Shubham05-tech/spam-detection-ml" target="_blank">Explore repository ↗</a>
+</div>
+
+</article>
+
+
+<article class="project reveal" data-cat="powerbi analysis">
+
+<div class="art store">
+<span>BUSINESS INTELLIGENCE</span>
+<strong>GLOBAL SUPER STORE</strong>
+<div class="bars">▂ ▅ ▃ ▇ ▆</div>
+</div>
+
+<div class="project-body">
+<small>06 / POWER BI</small>
+<h3>Global Super Store</h3>
+<p>Business and sales analytics project presenting data
+through Power BI visualizations.</p>
+<div class="tags">
+<i>Power BI</i><i>Sales Analysis</i>
+</div>
+<a href="https://github.com/Shubham05-tech/GLOBAL-SUPER-STORE" target="_blank">Explore repository ↗</a>
+</div>
+
+</article>
+
+
+<article class="project reveal" data-cat="analysis python">
+
+<div class="art flip">
+<span>E-COMMERCE</span>
+<strong>PRODUCT DATA</strong>
+</div>
+
+<div class="project-body">
+<small>07 / DATA ANALYSIS</small>
+<h3>Flipkart Sales Analysis</h3>
+<p>E-commerce dataset analysis exploring product,
+pricing, rating and category information.</p>
+<div class="tags">
+<i>Python</i><i>Pandas</i><i>EDA</i>
+</div>
+<a href="https://github.com/Shubham05-tech/FLIPKART-SALES-ANAYSIS" target="_blank">Explore repository ↗</a>
+</div>
+
+</article>
+
+
+<article class="project reveal" data-cat="python analysis">
+
+<div class="art regression">
+<span>MACHINE LEARNING FUNDAMENTALS</span>
+<strong>REGRESSION</strong>
+</div>
+
+<div class="project-body">
+<small>08 / MACHINE LEARNING</small>
+<h3>Linear &amp; Multiple Regression</h3>
+<p>Practice project exploring linear and multiple
+regression concepts using Python.</p>
+<div class="tags">
+<i>Python</i><i>Regression</i><i>ML</i>
+</div>
+<a href="https://github.com/Shubham05-tech/Linear-Multiple-Regression-using-Python-Machine-Learning-fundamentals-and-data-analysis" target="_blank">Explore repository ↗</a>
+</div>
+
+</article>
+
+</div>
+
+<div class="center">
+<a class="btn secondary" href="https://github.com/Shubham05-tech?tab=repositories" target="_blank">View all GitHub repositories ↗</a>
+</div>
+
+</div>
+</section>
+
+
+<!-- EDUCATION SECTION -->
+<section class="section alt" id="journey">
+
+<div class="container">
+
+<div class="heading reveal">
+<label>04 / MY JOURNEY</label>
+<h2>Education &amp; <em>training.</em></h2>
+</div>
+
+<div class="timeline">
+
+<article class="reveal">
+<small>CURRENT</small>
+<div>
+<h3>Master of Computer Applications – AI &amp; Data Science</h3>
+<p>Future University, Bareilly, Uttar Pradesh</p>
+</div>
+</article>
+
+<article class="reveal">
+<small>COMPLETED</small>
+<div>
+<h3>Bachelor of Science (B.Sc.)</h3>
+<p>Add your university name and passing year here.</p>
+<em>Update this information according to your official documents.</em>
+</div>
+</article>
+
+<article class="reveal">
+<small>CLASS XII</small>
+<div>
+<h3>Senior Secondary</h3>
+<p>Add your board and passing year.</p>
+</div>
+</article>
+
+<article class="reveal">
+<small>CLASS X</small>
+<div>
+<h3>Secondary</h3>
+<p>Add your board and passing year.</p>
+</div>
+</article>
+
+</div>
+
+<div class="training reveal">
+<b>✦</b>
+<div>
+<label>PROFESSIONAL TRAINING</label>
+<h3>Data Analytics – 45 Days Summer Training</h3>
+<p>Techpile Technology Pvt. Ltd., Lucknow · 2026</p>
+<strong>A++ Grade</strong>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- RESEARCH SECTION -->
+<section class="section" id="research">
+
+<div class="container">
+
+<div class="heading reveal">
+<label>05 / RESEARCH</label>
+<h2>Research &amp; <em>publications.</em></h2>
+</div>
+
+<div class="research">
+
+<article class="reveal">
+<small>2026 · IMPACT 2026</small>
+<h3>Applications of Speech Recognition: A Survey</h3>
+<p>Research work exploring applications of speech recognition technology.</p>
+<a href="https://www.researchgate.net/publication/408376740_Applications_of_Speech_Recognition_A_Survey" target="_blank">View research paper ↗</a>
+</article>
+
+<article class="reveal">
+<small>2026 · ICMRI 2026</small>
+<h3>A Review on AI-Based Smart Healthcare Monitoring Systems</h3>
+<p>Review research on the role of AI in smart healthcare monitoring systems.</p>
+<em>Add publication link when available.</em>
+</article>
+
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="section contact" id="contact">
+
+<div class="container reveal">
+
+<label>06 / GET IN TOUCH</label>
+
+<h2>
+Have a project or opportunity?<br>
+<em>Let's connect.</em>
+</h2>
+
+<p>
+I am interested in data analytics, business intelligence
+and machine learning opportunities. Feel free to reach out.
+</p>
+
+<a class="btn primary" href="mailto:pal8887555053@gmail.com">
+Send me an email ↗
 </a>
 
-                </article>
-
-
-
-                <!-- PROJECT 4 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            04
-                        </span>
-
-                        <span class="project-type">
-                            Power BI
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Global Super Store
-                    </h3>
-
-
-                    <p>
-
-                        Sales and business analytics project
-                        focused on visualizing business data
-                        and presenting useful insights
-                        through Power BI.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>Power BI</span>
-                        <span>Sales</span>
-                        <span>Business Analytics</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://github.com/Shubham05-tech/GLOBAL-SUPER-STORE"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View on GitHub →
-
-                    </a>
-
-                </article>
-
-
-
-                <!-- PROJECT 5 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            05
-                        </span>
-
-                        <span class="project-type">
-                            Power BI
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Flipkart Sales Analysis
-                    </h3>
-
-
-                    <p>
-
-                        E-commerce sales analysis and
-                        visualization project created to
-                        explore and present business-related
-                        sales insights.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>Power BI</span>
-                        <span>E-Commerce</span>
-                        <span>Analytics</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://github.com/Shubham05-tech/FLIPKART-SALES-ANAYSIS"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View on GitHub →
-
-                    </a>
-
-                </article>
-
-
-
-                <!-- PROJECT 6 -->
-
-                <article class="project-card">
-
-                    <div class="project-top">
-
-                        <span class="project-number">
-                            06
-                        </span>
-
-                        <span class="project-type">
-                            Data Analysis
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Tesla Stock/Sales Analysis
-                    </h3>
-
-
-                    <p>
-
-                        Automotive-focused data analysis and
-                        visualization project using Power BI.
-
-                    </p>
-
-
-                    <div class="project-tech">
-
-                        <span>Power BI</span>
-                        <span>Automotive</span>
-                        <span>Analysis</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://github.com/Shubham05-tech/Shubham05-tech-Tesla-Stock-Sales-Analysis"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link">
-
-                        View on GitHub →
-
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             EDUCATION
-        ========================================== -->
-
-        <section id="education"
-                 class="section section-light">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    EDUCATION
-                </p>
-
-                <h2>
-                    Academic Background
-                </h2>
-
-            </div>
-
-
-            <div class="timeline">
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-
-                    <div class="timeline-card">
-
-                        <span class="timeline-year">
-                            Pursuing
-                        </span>
-
-                        <h3>
-                            Master of Computer Applications –
-                            AI & Data Science
-                        </h3>
-
-                        <p>
-                            Future University, Bareilly,
-                            Uttar Pradesh
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-
-                    <div class="timeline-card">
-
-                        <span class="timeline-year">
-                            2025
-                        </span>
-
-                        <h3>
-                            Bachelor of Science (PCM)
-                        </h3>
-
-                        <p>
-                            University of Lucknow, Lucknow
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-
-                    <div class="timeline-card">
-
-                        <span class="timeline-year">
-                            2022
-                        </span>
-
-                        <h3>
-                            Senior Secondary (Class XII)
-                        </h3>
-
-                        <p>
-                            U.P. Board
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-
-                    <div class="timeline-card">
-
-                        <span class="timeline-year">
-                            2020
-                        </span>
-
-                        <h3>
-                            Secondary School Examination
-                            (Class X)
-                        </h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             TRAINING
-        ========================================== -->
-
-        <section id="training"
-                 class="section">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    TRAINING
-                </p>
-
-                <h2>
-                    Professional Training
-                </h2>
-
-            </div>
-
-
-            <div class="training-card">
-
-
-                <div class="training-top">
-
-                    <div>
-
-                        <span class="training-tag">
-                            45 DAYS
-                        </span>
-
-
-                        <h3>
-                            Data Analytics —
-                            Summer Training
-                        </h3>
-
-
-                        <p>
-                            Techpile Technology Pvt. Ltd.,
-                            Lucknow
-                        </p>
-
-                    </div>
-
-
-                    <div class="training-year">
-                        2026
-                    </div>
-
-                </div>
-
-
-                <p class="training-description">
-
-                    Completed practical training in data
-                    analysis, data visualization and
-                    machine learning concepts.
-
-                </p>
-
-
-                <div class="training-grade">
-                    A++ Grade
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             RESEARCH
-        ========================================== -->
-
-        <section id="research"
-                 class="section section-light">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    RESEARCH
-                </p>
-
-                <h2>
-                    Research & Conferences
-                </h2>
-
-            </div>
-
-
-            <div class="research-grid">
-
-
-                <article class="research-card">
-
-                    <span class="research-year">
-                        2026
-                    </span>
-
-
-                    <h3>
-                        Applications of Speech Recognition:
-                        A Survey
-                    </h3>
-
-
-                    <p>
-                        Research Paper presented at
-                        IMPACT 2026.
-                    </p>
-
-
-                    <a
-                        href="https://www.researchgate.net/publication/408376740_Applications_of_Speech_Recognition_A_Survey"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="research-link">
-
-                        View Research Paper →
-
-                    </a>
-
-                </article>
-
-
-
-                <article class="research-card">
-
-                    <span class="research-year">
-                        2026
-                    </span>
-
-
-                    <h3>
-                        A Review on AI-Based Smart
-                        Healthcare Monitoring Systems
-                    </h3>
-
-
-                    <p>
-                        Review Paper presented at
-                        ICMRI 2026.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             CONTACT
-        ========================================== -->
-
-        <section id="contact"
-                 class="contact-section">
-
-            <div class="contact-content">
-
-
-                <p class="section-label contact-label">
-                    GET IN TOUCH
-                </p>
-
-
-                <h2>
-                    Let's Connect
-                </h2>
-
-
-                <p class="contact-description">
-
-                    Interested in data analytics,
-                    machine learning and real-world
-                    projects.
-
-                </p>
-
-
-                <div class="contact-buttons">
-
-
-                    <a
-                        href="mailto:pal8887555053@gmail.com"
-                        class="btn btn-primary">
-
-                        Email Me
-
-                    </a>
-
-
-                    <a
-                        href="https://github.com/Shubham05-tech"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-outline">
-
-                        GitHub
-
-                    </a>
-
-
-                    <a
-                        href="https://www.linkedin.com/in/shubham-pal-178138395"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-outline">
-
-                        LinkedIn
-
-                    </a>
-
-                </div>
-
-
-                <div class="contact-details">
-
-                    <p>
-                        <strong>Email:</strong>
-                        pal8887555053@gmail.com
-                    </p>
-
-
-                    <p>
-                        <strong>Phone:</strong>
-                        +91-8887555053
-                    </p>
-
-
-                    <p>
-                        <strong>Location:</strong>
-                        Uttar Pradesh, India
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
-
-    <footer>
-
-        <p>
-            © 2026 Shubham Pal. All Rights Reserved.
-        </p>
-
-    </footer>
-
-
-
-    <!-- =========================================
-         JAVASCRIPT
-    ========================================== -->
-
-    <script src="script.js"></script>
+<div class="contact-links">
+<a href="mailto:pal8887555053@gmail.com">pal8887555053@gmail.com</a>
+<a href="https://www.linkedin.com/in/shubham-pal-178138395" target="_blank">LinkedIn ↗</a>
+<a href="https://github.com/Shubham05-tech" target="_blank">GitHub ↗</a>
+<span>Uttar Pradesh, India</span>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container foot">
+<a class="logo" href="#home">Shubham<span>.</span></a>
+<p>Designed &amp; built by Shubham Pal · © <span id="year"></span></p>
+<a href="#home">Back to top ↑</a>
+</div>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
