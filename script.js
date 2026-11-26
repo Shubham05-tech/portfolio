@@ -1,128 +1,147 @@
-// ========================================
-// SHUBHAM PAL PORTFOLIO - JAVASCRIPT
-// ========================================
 
+// MOBILE NAVIGATION
 
-// ========================================
-// PAGE LOAD
-// ========================================
+const menu = document.getElementById('menu');
+const nav = document.getElementById('navLinks');
 
-document.addEventListener("DOMContentLoaded", function () {
+if (menu && nav) {
 
-    console.log("Shubham Pal Portfolio Loaded Successfully!");
+    menu.addEventListener('click', () => {
 
-});
+        const open = nav.classList.toggle('open');
 
-
-// ========================================
-// SMOOTH SCROLLING
-// ========================================
-
-document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-
-    link.addEventListener("click", function (event) {
-
-        const targetId = this.getAttribute("href");
-
-        // Ignore empty links
-        if (!targetId || targetId === "#") {
-            return;
-        }
-
-        const targetSection = document.querySelector(targetId);
-
-        if (targetSection) {
-
-            event.preventDefault();
-
-            targetSection.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-
-        }
+        menu.setAttribute('aria-expanded', String(open));
 
     });
 
-});
+    nav.querySelectorAll('a').forEach(link => {
 
+        link.addEventListener('click', () => {
 
-// ========================================
-// NAVBAR SHADOW ON SCROLL
-// ========================================
+            nav.classList.remove('open');
 
-const header = document.querySelector("header");
+            menu.setAttribute('aria-expanded', 'false');
 
-window.addEventListener("scroll", function () {
-
-    if (!header) {
-        return;
-    }
-
-    if (window.scrollY > 50) {
-
-        header.style.boxShadow =
-            "0 4px 20px rgba(0, 0, 0, 0.12)";
-
-    } else {
-
-        header.style.boxShadow =
-            "0 2px 15px rgba(0, 0, 0, 0.08)";
-
-    }
-
-});
-
-
-// ========================================
-// ACTIVE NAVIGATION LINK
-// ========================================
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", function () {
-
-    let currentSection = "";
-
-    sections.forEach(function (section) {
-
-        const sectionTop = section.offsetTop - 120;
-        const sectionHeight = section.offsetHeight;
-
-        if (
-            window.scrollY >= sectionTop &&
-            window.scrollY < sectionTop + sectionHeight
-        ) {
-            currentSection = section.getAttribute("id");
-        }
+        });
 
     });
-
-    navLinks.forEach(function (link) {
-
-        link.style.color = "#334155";
-
-        if (link.getAttribute("href") === "#" + currentSection) {
-            link.style.color = "#2563eb";
-        }
-
-    });
-
-});
-
-
-// ========================================
-// FOOTER YEAR
-// ========================================
-
-const footerText = document.querySelector("footer p");
-
-if (footerText) {
-
-    const currentYear = new Date().getFullYear();
-
-    footerText.innerHTML =
-        `© ${currentYear} Shubham Pal. All Rights Reserved.`;
 
 }
+
+
+// SCROLL REVEAL ANIMATION
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add('visible');
+
+            observer.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.12
+});
+
+document.querySelectorAll('.reveal').forEach(element => {
+
+    observer.observe(element);
+
+});
+
+
+// PROJECT FILTERS
+
+document.querySelectorAll('.filters button').forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        document.querySelectorAll('.filters button').forEach(btn => {
+
+            btn.classList.remove('active');
+
+        });
+
+        button.classList.add('active');
+
+        const filter = button.dataset.filter;
+
+        document.querySelectorAll('.project').forEach(card => {
+
+            const categories = (card.dataset.cat || '').split(' ');
+
+            const show = filter === 'all' || categories.includes(filter);
+
+            card.classList.toggle('hide', !show);
+
+        });
+
+    });
+
+});
+
+
+// SCROLL PROGRESS BAR
+
+const progress = document.getElementById('progress');
+
+window.addEventListener('scroll', () => {
+
+    const maxScroll =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+    const percentage = maxScroll > 0
+        ? (window.scrollY / maxScroll) * 100
+        : 0;
+
+    if (progress) {
+
+        progress.style.width = percentage + '%';
+
+    }
+
+}, {
+    passive: true
+});
+
+
+// CURRENT YEAR
+
+const year = document.getElementById('year');
+
+if (year) {
+
+    year.textContent = new Date().getFullYear();
+
+}
+
+
+// ROTATING PROFESSIONAL TITLE
+
+const role = document.getElementById('role');
+
+const roles = [
+    'Power BI Developer',
+    'Python & SQL Learner',
+    'Data Visualization Enthusiast'
+];
+
+let index = 0;
+
+setInterval(() => {
+
+    if (role) {
+
+        index = (index + 1) % roles.length;
+
+        role.textContent = roles[index];
+
+    }
+
+}, 2800);
